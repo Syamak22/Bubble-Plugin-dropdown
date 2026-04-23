@@ -304,6 +304,16 @@ function(instance, context) {
     }
   });
 
+  // ─── ResizeObserver : re-affiche quand l'élément retrouve ses dimensions ─────
+  if (typeof ResizeObserver !== 'undefined') {
+    var ro = new ResizeObserver(function(entries) {
+      if (entries[0] && entries[0].contentRect.width > 0) {
+        updateTriggerDisplay();
+      }
+    });
+    ro.observe(instance.canvas[0]);
+  }
+
   // ─── Affichage initial ────────────────────────────────────────────────────
   $triggerText.text('Sélectionner…');
 
