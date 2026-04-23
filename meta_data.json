@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "technical",
+        "1": "data (things)",
+        "2": "productivity"
+    },
+    "description": "A fully customizable dropdown element that works with any Bubble data source (option sets, database types, users, etc.). Displays a list of items based on a configurable field name, supports an initial value, optional search bar, and publishes the selected Bubble object as a state. Fires an event on every item click.\n\nExposed state:\n\nselected_item (type : any) — the Bubble object that was clicked\nEvent:\n\nitem_selected — triggered on every item click, even if the same item is clicked again",
+    "designed_for": "web",
+    "image": "//meta-q.cdn.bubble.io/f1773927520339x439998447454414960/mdi--form-dropdown.png",
+    "license": "open_source",
+    "link": "pro@syamakazadeh.com",
+    "name": "dropdown",
+    "platforms_new": "web"
+}
